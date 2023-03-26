@@ -24,7 +24,7 @@
 
     <div class="container-fluid p-3">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-1">
                 <div class="card h-100">
                     <img class="card-img-top cropimg" src="../img/Британская кошка.png" alt="Card image" style="width:100%">
                     <div class="card-body">
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mt-1">
                 <div class="card h-100">
                 <img class="card-img-top cropimg" src="../img/Сибирская кошка.jpg" alt="Card image" style="width:100%">
                   <div class="card-body">
@@ -49,7 +49,7 @@
             </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mt-1">
                 <div class="card h-100">
                 <img class="card-img-top cropimg" src="../img/Сомалийская_кошка.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
@@ -335,62 +335,87 @@
     <div class="container-fluid text-center mt-2">
         <div class="row">
 <!--Коты из приюта-->
-            <div class="col-md-2">
-                <div class="p-5 bg-primary text-white rounded flex-column d-grid gap-0 h-100">
+            <div class="col-md-2 mt-1">
+                <div class="p-5 bg-primary text-white rounded flex-column h-100">
                     <h4>Возьмите кота из приюта</h4>
-                    <a href="https://murkosha.ru/" class="btn btn-warning buttonHeight">Муркоша</a>
-                    <a href="https://kotodommurlyka.ru/" class="btn btn-warning buttonHeight">Котодом Мурлыка</a>
-                    <a href="https://www.friendforpet.ru/pets/cats" class="btn btn-warning buttonHeight">Друг для
+                    <a href="https://murkosha.ru/" class="btn btn-warning buttonHeight w-100 m-2">Муркоша</a>
+                    <a href="https://kotodommurlyka.ru/" class="btn btn-warning buttonHeight w-100 m-2">Котодом Мурлыка</a>
+                    <a href="https://www.friendforpet.ru/pets/cats" class="btn btn-warning buttonHeight w-100 m-2">Друг для
                         друга</a>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class=" border rounded border-dark bg-black">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-N8KbQ8IM4g"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div></div>
-            <div class="col-md-6 p-3">
-                <h3>Где-то здесь спрятались коты. Найдите их</h3>
-
-                <div id="cat1" class="collapse m-1">
-                    <img src="img/cat2.1.jpg" class="sizeimg1 border border-light rounded" alt="">
-                </div>
+            <div class="col-md-4 mt-1">
+                <div class="h-100 bg-black">
 
 
-
-                <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-
-                      <div class="modal-body">
-                        Не здесь
-                      </div>
-
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger m-auto" data-bs-dismiss="modal">Закрыть</button>
-                      </div>
-
+                    <div class="videoBlock">
+                        <iframe src="https://www.youtube.com/embed/-N8KbQ8IM4g"
+                                title="YouTube video player" frameborder="0" allow="accelerometer;
+                                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                web-share" allowfullscreen></iframe>
                     </div>
-                  </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6 mt-1">
+                <div class="p-3 bg-primary text-white rounded h-100">
+                    <h3>Где-то здесь спрятались коты. Найдите их</h3>
+
+                    <div id="cat1" class="collapse m-1">
+                        <img src="img/cat2.1.jpg" class="sizeimg1 border border-light rounded" alt="">
+                    </div>
+
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body text-black">
+                                    <h3>Не здесь</h3>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger m-auto" data-bs-dismiss="modal">
+                                        Закрыть
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="offcanvas offcanvas-start" id="myCanvas">
+                        <div class="offcanvas-header text-black">
+                            <h1 class="offcanvas-title">Вот он!</h1>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="img/cat2.2.jpg" alt="" class="rounded">
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <button type="button" class="m-4 mb-0 btn btn-danger   flex-column btn-lg w-50"
+                                data-bs-toggle="dropdown"
+                                data-bs-target="#cat1">Не здесь
+                        </button>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item">Мур<br><img src="img/cat2.1.jpg" class="sizeimg1" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="m-4 mb-0 btn btn-success flex-column btn-lg w-50" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Точно тут
+                    </button>
+                    <button type="button" class="m-4 mb-0 btn btn-dark flex-column btn-lg w-50" data-bs-toggle="offcanvas"
+                            data-bs-target="#myCanvas">Или тут?
+                    </button>
                 </div>
 
 
-                <div class="offcanvas offcanvas-start" id="myCanvas">
-                  <div class="offcanvas-header">
-                    <h1 class="offcanvas-title">Вот он!</h1>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <img src="img/cat2.2.jpg" alt="" class="rounded">
-                  </div>
-                </div>
-
-                  <button type="button" class="m-4 mb-0 btn btn-primary btn-lg" data-bs-toggle="collapse" data-bs-target="#cat1">Не здесь</button>
-                  <button type="button" class="m-4 mb-0 btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Точно тут</button>
-                  <button type="button" class="m-4 mb-0 btn btn-primary btn-lg" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">Или тут?</button>
 
 
 
