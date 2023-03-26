@@ -1,0 +1,38 @@
+.cropimg{
+    object-fit: cover;
+    width: 500px;
+    height: 600px;
+}
+
+.sizeimg1{
+    width: 150px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.button-block{
+    display: block;
+    margin: 3% auto;
+}
+
+.scrolled{
+    overflow: scroll;
+}
+
+.heightText{
+    height: 570px;
+}
+
+.withoutmargin{
+    margin-bottom: 0;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+.buttonHeight{
+    height: 35px;
+}
